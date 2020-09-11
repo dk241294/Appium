@@ -21,6 +21,6 @@ public class Basic extends Base {
         //or driver.findElementByClassName("android.widget.EditText").sendKeys("deepak");
         driver.findElementByXPath("//android.widget.Button[@text='OK']").click();
         //or driver.findElementsByClassName("android.widget.Button").get(1).click();
-        
+
     }
 }
