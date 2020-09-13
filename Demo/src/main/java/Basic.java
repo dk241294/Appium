@@ -4,11 +4,11 @@ import org.openqa.selenium.By;
 import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
-public class Basic extends Base {
+public class Basic extends hybridClass {
     public static void main(String[] args) throws MalformedURLException, InterruptedException {
 
         AndroidDriver driver;
-        driver = capabilities();
+        driver = capabilities("emulator");
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
         System.out.println("deepaaaaaaaaaaaaaaaaaaaaaaaaa");
         driver.findElementByXPath("//android.widget.TextView[@text='Preference']").click();
